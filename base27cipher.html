@@ -1,0 +1,39 @@
+<html>
+	<title>
+		Base 27 Cipher
+	</title>
+<head>
+
+	<script src='base27cipher.js'></script>
+	<style>
+		body{
+			background-color: #A1B2FF;
+			margin-top: 5%;
+			margin-left: 5%;
+			margin-right: 5%;
+			padding: 20px;
+			border: black solid 1px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Base 27 Cipher</h1>
+	
+	<h3>Please enter the message:</h3>
+	<input type="text" id="message" size="100" placeholder="Please enter message to Decrypt"/>
+	
+	<h3>Please enter the key:</h3>
+	<input type="text" id="key" size="10" placeholder="key"/>
+
+	<input type="button" name="Decrypt" value="Decrypt Message" onclick="decryptMessage();"/>
+	<p>	
+		<b>The decrypted message is: </b>
+		<span id="decryptedMessage"></span>
+	</p>
+
+
+
+
+</body>
+</html>

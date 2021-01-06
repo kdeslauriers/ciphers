@@ -1,0 +1,57 @@
+<html>
+	<title>
+		Cipher Examples
+	</title>
+<head>
+
+	<script src='cipher.js'></script>
+	<style>
+		body{
+			background-color: #A1B2FF;
+			margin-top: 5%;
+			margin-left: 10%;
+			margin-right: 10%;
+			padding: 20px;
+			border: black solid 1px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Cipher Examples</h1>
+	<h2>The message:</h2>
+
+	<input type="text" id="message" size="100" placeholder="Please enter message to Encrypt"/>
+
+	<h2 id='Caesar Cipher'>Caesar Cipher</h2>
+	<h3>Please enter the shift:</h3>
+	
+	<input min="-25" max="25" type="number" id="shift"/>
+
+	<input type="button" name="Encypt" value="Encrypt Message" onclick="encryptCaesarV2();"/>
+	<p>	
+		<b>The encrypted message is using Caesar Cipher is: </b>
+		<span id="encryptedMessageCaesar"></span>
+	</p>
+	<h2 id='Simple Substitution Cipher'>Simple Substitution Cipher</h2>
+	<h3>Please enter the key:</h3>
+	<input type="text" id="key"/>
+	<input type="button" name="Encypt" value="Encrypt Message" onclick="encryptSubstitution();"/>
+	<p>	
+		<b>The encrypted message is using Substitution is: </b>
+		<span id="encryptedMessageSubstitution"></span>
+	</p>
+
+	<h2 id='Cipher'>Rais's Substitution Cipher</h2>
+	<h3>Please enter the key:</h3>
+	<input type="text" id="key"/>
+	<input type="button" name="Encypt" value="Encrypt Message" onclick="encryptSubstitution();"/>
+	<p>	
+		<b>The encrypted message is using Substitution is: </b>
+		<span id="encryptedMessageSubstitution"></span>
+	</p>
+
+
+
+</body>
+</html>

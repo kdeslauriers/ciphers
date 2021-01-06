@@ -1,0 +1,77 @@
+<html>
+	<title>
+		Excalibur Code
+	</title>
+<head>
+
+	<script src='excaliburcipher.js'></script>
+	<style>
+		body{
+			background-color: #A1B2FF;
+			margin-top: 5%;
+			margin-left: 5%;
+			margin-right: 5%;
+			padding: 20px;
+			border: black solid 1px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Excalibur Code</h1>
+	<p>The Excalibur Code is one where a message is split into two halves, with the second half having equal or one more than the number of characters than the first half (including spaces and other special characters). The next step has the second half being reversed, and then its characters placed alternately with the characters of the first half, always starting with the first character of the second half:</p>
+
+	<p>
+		e.g. &lt;To be or not to be, that is the question!&gt;<br/> will be broken into the two halves:<br/> &lt;To be or not to be, &gt;<br/> and &lt;that is the question!&gt; and then blended together:<br/> &lt;!Tnoo ibtes eourq  neohtt  tsoi  btea,h t&gt;<br/> This is called a <b>fold</b>. 
+	</p>
+
+	<p>
+		In order to accommodate meaningful spaces at the end of a sentence, each line will be bracketed in a set of angle brackets: &lt; &gt; as shown. 
+	</p>
+
+	<p>
+		The secret code of the current problem folds a line as described an unknown number of times. Embedded in the code is a password. When an unfolded phrase starts with a given password the process stops.
+	</p>
+
+	<p>
+		For example, the following code is the result of many folds. The password is <i>“chaos”</i>
+	</p>
+
+	<p>
+	&lt;osntrathtteTbqueob seoooao tcni!&nbsp;&nbsp;h tih s  e, &gt; </p>
+	<p>
+		Unfolding the line gives us successively:
+	</p>
+
+	<p style="margin-left: 30%;margin-right: 30%; ">
+		 stahtTqebsoootn!  i  e , shth ic aoe oubettrno<br/>
+		 thTesot!  e,st caeobtronteu o ihh   i noobqtas<br/>
+		 heo! ,tcebrne  h   obtsaqoni hioutotoa se tsTt<br/>
+		 e!,cbn h otaoihottas stTte ooui nqsb   eret oh<br/>
+		 !cnhoaiotssTeou qb ee hotr  snio tt athot  b,e<br/>
+		 chaosTo be or not to be, that is the question!<br/>
+	</p>
+
+<p>
+	We may stop when the word chaos is encountered at the start.  The decoded phrase then is: 
+</p>
+
+<p>
+	&lt;To be or not to be, that is the question!&gt; 
+</p>
+	<h3>Please enter the message:</h3>
+	<input type="text" id="message" size="100" placeholder="Please enter message to Decrypt surround with < and >"/>
+	<h3>Please enter the key:</h3>
+	<input type="text" id="key" size="10" placeholder="key"/>
+
+	<input type="button" name="Decrypt" value="Decrypt Message" onclick="decryptMessage();"/>
+	<p>	
+		<b>The decrypted message is: </b>
+		<span id="decryptedMessage"></span>
+	</p>
+
+
+
+
+</body>
+</html>
